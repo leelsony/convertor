@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <div class="rm">
+        <h1>Convertor</h1>
+        <p>From centimeters to inches</p>
+        <br>
+       
+        <label for=""></label>
+        <input class="" type="text" id="jh" placeholder="centimeters" >
+        <h1 id="jm"></h1>
+        <button  onclick="convert()">answer me</button>
+  <br>
+  <br>
+           <label for="name"></label>
+            <input class="" type="text" id="v" placeholder="inches" >
+    </div>
+  </div>
+    <script>
+        function convert(){
+            let inches=document.getElementById("jh").value;
+            let centimeters=inches*2.54;
+            document.getElementById("v").value=centimeters;
+        }
+    </script>
+
+    
+<!-- <script>
+    function convert(){
+        let inches=document.getElementById("j").value;
+        let kilometers=meters*1000;
+        document.getElementById("k").value=centimeters;
+    }
+</script>  -->
+    <style>
+        body{
+          background-color: black; 
+            color: white; 
+        }
+        .rm{
+            margin-top: 200px;
+              border: 6px double rgb(219, 203, 214);
+              height: 300px;
+              width: 500px;
+              margin-left: 500px;
+        }
+        h1{
+             color: blue;
+            text-decoration: underline;
+            text-align: center;
+            text-transform:uppercase; 
+
+        }
+        p{
+             color: deeppink;
+            text-align: center;
+            text-transform: capitalize; 
+
+        }
+        label{
+            margin-left: 30%;
+        
+
+        }
+        button{
+            margin-left: 190px;
+            background-color:deepskyblue;
+            border-radius: 50%;
+        }
+        /* div{
+            margin-top: 20%;
+              border: 6px double rgb(219, 203, 214);
+              height: 300px;
+              width: 500px;
+              margin-left: 20%;
+
+        }
+     */
+
+    </style>
+</body>
+</html>
